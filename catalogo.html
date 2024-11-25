@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <body>
+        <header id="main-header">
+        <a id="logo-header" href="#">
+        <span class="site-name">PIA</span>
+        <span class="site-desc"> Diseño Avanzado de Páginas Web</span>
+        </a> <!-- / #logo-header -->
+        <nav>
+        <ul>
+        <li><a href="somos.html"> ¿ Quienes somos?</a></li><!-- Menu Inicio -->
+        <li><a href="historia.html"> Historia</a></li>
+        <li><a href="catalogo.html"> Catálogo</a></li>
+        <li><a href="promociones.html"> Promociones </a></li>
+        <li><a href="sucursales.html"> Sucursales</a></li>
+        <li><a href="contactanos1.html"> Contáctanos<la></li>
+        </ul>
+        </nav>
+        </header>
+        <section id="main-content">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catálogo de Productos - Tienda de Celulares</title>
+    <link rel="stylesheet" href="estloscelulares.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        #main-content {
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .catalogue {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .product-color {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .product-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+
+    <section id="main-content">
+        <div class="container">
+            <div class="catalogue">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img class="product-image" src="gg.jpg" alt="Celular Modelo A">
+                    <div class="product-info">
+                        <div class="product-name">Xiaomi 14 Pro</div>
+                        <div class="product-color">Color: Negro</div>
+                        <div class="product-price">$26,000</div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img class="product-image" src="google.jpg" alt="Celular Modelo B">
+                    <div class="product-info">
+                        <div class="product-name">Google Pixel 9 pro</div>
+                        <div class="product-color">Color: negrp</div>
+                        <div class="product-price">$34,000</div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img class="product-image" src="samsung.jpg" alt="Celular Modelo C">
+                    <div class="product-info">
+                        <div class="product-name">Samsung Galaxy S23 Ultra</div>
+                        <div class="product-color">Color: Gris</div>
+                        <div class="product-price">$23,000</div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <img class="product-image" src="one plus.jpg" alt="Celular Modelo D">
+                    <div class="product-info">
+                        <div class="product-name">Celular One Plus 11</div>
+                        <div class="product-color">Color: Blanco</div>
+                        <div class="product-price">$399.99</div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <img class="product-image" src="iphone15.webp" alt="Celular Modelo E">
+                    <div class="product-info">
+                        <div class="product-name">Celular Iphone 15</div>
+                        <div class="product-color">Color: Gris</div>
+                        <div class="product-price">$16,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
